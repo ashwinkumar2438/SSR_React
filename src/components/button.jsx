@@ -5,9 +5,9 @@ const Button = () => {
     const [ count, setCount ] = useState( 0 );
 
     return (
-        <div>
+        <div className='counter'>
             <div className="count"> Button clicked { count } times </div>
-            <button onClick={ () => setCount( count => ++ count ) }>Click me</button>
+            <button className='count-btn' onClick={ () => setCount( count => ++count ) }>Click me</button>
         </div>
     )
 }
